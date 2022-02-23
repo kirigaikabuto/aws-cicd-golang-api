@@ -42,6 +42,6 @@ jobs:
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           application_name: aws-cicd-golang-api
           environment_name: aws-cicd-golang-api
-          version_label: 12348
+          version_label: Sample Application
           region: "us-east-2"
           deployment_package: deploy.zip

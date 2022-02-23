@@ -26,5 +26,5 @@ func main() {
 	router := gin.Default()
 	router.GET("/", getAlbums)
 
-	router.Run("0.0.0.0:8080")
+	router.Run(":5000")
 }
