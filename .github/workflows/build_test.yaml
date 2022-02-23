@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Generate deployment package
-        run: zip -r deploy.zip . -x '*.git*'
+        run: zip -r new.zip . -x '*.git*'
 
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v20
@@ -44,5 +44,5 @@ jobs:
           environment_name: aws-cicd-golang-api
           version_label: Sample Application
           region: "us-east-2"
-          deployment_package: deploy.zip
+          deployment_package: new.zip
           use_existing_version_if_available: true
