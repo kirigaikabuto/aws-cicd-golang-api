@@ -23,7 +23,7 @@ jobs:
 
       - name: Run Tests
         run: |
-          go build
+
   deploy:
     needs: [test]
     runs-on: ubuntu-latest
